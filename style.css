@@ -261,7 +261,8 @@ footer h4 {
     padding: .5em;
 }
 
-button {
+button,
+.button {
     border: 1px solid #222;
     border-radius: 1px;
     background-color: #fff;
@@ -271,7 +272,8 @@ button {
     font-size: 1.15em;
 }
 
-button a {
+button a,
+.button a {
     text-decoration: none;
     color: #222;   
 }
