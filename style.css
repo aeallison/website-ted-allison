@@ -155,6 +155,10 @@ header span {
     letter-spacing: .3em;
 }
 
+.about p button {
+    text-align: center;
+}
+
 .radiostation {
     margin: 3em 0 0 0;
 }
@@ -266,10 +270,11 @@ button,
     border: 1px solid #222;
     border-radius: 1px;
     background-color: #fff;
-    padding: .5em 1.5em;
+    padding: .5em;
     margin: 0 0 3em 0;
     font-family: 'josefin sans', sans-serif;
     font-size: 1.15em;
+    text-align: center;
 }
 
 button a,
@@ -318,7 +323,7 @@ button a,
 
 
     .about p {
-        margin: 3em 5em 3em 1em;
+        margin: 3em 10em 3em 1em;
     }
 
     .abouthost {
@@ -333,9 +338,12 @@ button a,
         margin: 3em;
     }
 
-    .abouthost h3,
-    .abouthost h4 {
-        margin-left: 2em;
+    .aboutshow-content {
+        flex-wrap: wrap;
+    }
+
+    .aboutshowimg {
+        margin: 0 0 0 7em;
     }
 
     .imghost {
