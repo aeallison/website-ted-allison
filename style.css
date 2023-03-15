@@ -1,5 +1,5 @@
 html {
-    color: #222;
+    color: #1b1b1e;
     font-size: 1em;
 }
 
@@ -13,7 +13,7 @@ html {
 body {
     font-family: 'josefin sans', sans-serif;
     font-weight: 400;
-    color: #222;
+    color: #1b1b1e;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,6 +28,17 @@ main {
     align-items: center;
     flex-flow: row wrap;
 }
+
+h1 {
+    font-size: 2.25em;
+}
+
+h2 {
+    font-size: 2.15em;
+    letter-spacing: .1em;
+    line-height: 1.75em;
+}
+
 h1,
 h2 {
     text-transform: uppercase;
@@ -36,14 +47,17 @@ h2 {
 h2,
 h3 {
     color: #7B6B43;
-    letter-spacing: .5em;
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1.85em;
+    letter-spacing: .2em;
+    line-height: 1.75em;
 }
 
 h4 {
+    font-size: 1.35em;
+    color: #7B6B43;
     letter-spacing: .3em;
     line-height: 2em;
 }
@@ -56,11 +70,16 @@ h5 {
 }
 
 p {
-    font-weight: 300;
+    font-family: 'merriweather' , serif;
+    font-weight: 100;
+    font-size: 1em;
+    letter-spacing: .13em;
+    
 }
 
 a {
     color: #7B6B43;
+    font-family: 'merriweather' , serif;
 }
 
 header {
@@ -81,7 +100,6 @@ header h1 {
     margin: .5em;
     padding: .5em;
     letter-spacing: .55em;
-    font-size: 2.25em;
 }
 
 header span {
@@ -114,9 +132,9 @@ header span {
 .aboutshowimg {
     max-width: 100%;
     height: auto;
-    width: 500px;
+    width: 400px;
     border-radius: 3px;
-    margin: 0 0 5em 0;
+    margin: 5em 0 10em 0;
 }
 .hostimg {
     max-width: 70%;
@@ -135,31 +153,42 @@ header span {
     margin: 1em;
 }
 
-.about h1 {
-    margin: 0 0 .5em 0;
-    text-align: center;
+.aboutshow {
+    border-top: 4px dotted #7b6b43;
+    margin: 3em 0;
 }
 
 .aboutshow h2 {
-    margin: 2em 0;
-    text-transform: uppercase;
-    line-height: 1.75em;
-    letter-spacing: .5em;
+    margin: 3em 0 2em 0;
 }
 
 .about p {
     line-height: 1.75em;
-    margin: 0 0 5em 0;
-    font-size: 1.15em;
-    letter-spacing: .3em;
+    margin: 0 0 3em 0;
 }
 
 .about p button {
     text-align: center;
 }
 
+.about-listings {
+    border-bottom: 4px dotted #7B6B43;
+    border-top: 4px dotted #7b6b43;
+}
+
+.about-listings h3 {
+    margin: 3em 0;
+}
+
 .radiostation {
-    margin: 3em 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #1b1b1e;
+    border-radius: 3px;
+    margin: 5em 0;
+    padding: 1em;
+    text-align: center;
 }
 
 .radiothree {
@@ -169,20 +198,16 @@ header span {
 .radiostation p {
     text-transform: lowercase;
     margin: 1em;
-}
-
-.abouthost {
-    margin-top: 7em;
-    border-top: 2px solid #7B6B43;
-    border-radius: 2px;;
+    color: #C5C9A4;
 }
 
 .abouthost h3 {
     margin-top: 3em;
+    line-height: .5em;
 }
 
 .abouthost h4 {
-    margin-bottom: 2em;
+    color: #1b1b1e;
 }
 
 footer {
@@ -199,6 +224,9 @@ footer h4 {
     margin: 0 0 1em 0;
     letter-spacing: .5em;
 }
+
+
+
 
 /** SHOW PAGE **/
 
@@ -310,9 +338,24 @@ button a,
         padding: 1em;
     }
 
+    .radiostation {
+        max-width: 30%;
+        margin: 2em 0;
+        padding: 2em 1em;
+        align-items: center;
+        text-align: center;
+    }
 
-    .about p {
-        margin: 3em 10em 3em 1em;
+    .radiolistings {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        ;
+    }
+
+    .radiolistings h3 {
+        margin-bottom: 3em;
     }
 
     .abouthost {
