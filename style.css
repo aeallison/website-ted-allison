@@ -102,6 +102,12 @@ header h1 {
     letter-spacing: .55em;
 }
 
+header h1 a {
+    text-decoration: none;
+    font-family: 'josefin sans', sans-serif;
+    color: #1b1b1e;
+}
+
 header span {
     font-size: .5em;
 }
@@ -179,6 +185,7 @@ button {
     border-radius: 1px;
     background-color: #fff;
     padding: .5em;
+    margin: 2em 0;
     font-family: 'josefin sans', sans-serif;
     font-size: 1.15em;
     text-align: center;
@@ -189,7 +196,6 @@ button a {
     text-decoration: none;
     color: #222;   
 }
-
 
 .about-listings {
     border-bottom: 4px dotted #7B6B43;
@@ -283,7 +289,7 @@ footer h2,
 
 .episode-item a {
     color: #222;
-    font-size: 1em;
+    font-size: .75em;
 }
 
 .hourone,
@@ -314,6 +320,17 @@ footer h2,
 .show h2 { 
     text-transform: uppercase;
     line-height: 1.75em;
+}
+
+.showheader {
+    margin: 0 0 1em 0;
+    font-size: 2.5em;
+}
+
+.showheader span {
+    color: #1b1b1e;
+    font-weight: 400;
+    font-size: .75em;
 }
 
 .show h3 {
@@ -358,7 +375,10 @@ footer h2,
         text-align: center;
     }
 
-    .radiolistings {
+    .radiolistings,
+    .onehour,
+    .twohour,
+    .threehour {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -391,12 +411,20 @@ footer h2,
 
 /** SHOW PAGE **/
 
+    .showlist {
+        margin: 5em 0;
+    }
+
+    .thisweek-item {
+        margin: 2.5em 0;
+    }
+
     .hourone,
     .hourtwo,
     .hourthree {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: flex-start;
         margin: 2em;
     }
@@ -412,6 +440,8 @@ footer h2,
     .blist-wrapper li,
     .clist-wrapper li {
         padding: 1em .5em;
+        display: flex;
+        flex-direction: row;
     }
 
 
